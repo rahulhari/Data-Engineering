@@ -109,6 +109,11 @@ To use a different city, update the `CITY` value in the scripts.
 
 For better security, avoid committing real API keys directly in code. A future improvement would be to load the API key from an environment variable.
 
+### OpenWeather API Key
+
+You need to generate an API key from OpenWeatherMap to run these scripts. Sign up and create an API key at https://openweathermap.org/.
+
+
 ## Notes
 
 - Run the scripts from inside the `weather_pipeline` folder because the CSV and database paths are relative.

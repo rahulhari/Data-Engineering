@@ -4,14 +4,21 @@ import pandas as pd
 import os
 from datetime import datetime
 
-API_KEY = "2a1179a0e22aac39d436635997069e09"
+API_KEY = "enter your api"
 
-CITY = "Bengaluru"
+CITIES = [
+    "Bengaluru",
+    "Mumbai",
+    "Delhi",
+    "Chennai",
+    "Hyderabad"
+]
 
-url = (
-    f"https://api.openweathermap.org/data/2.5/weather"
-    f"?q={CITY}&appid={API_KEY}&units=metric"
-)
+for CITY in CITIES:
+    url = (
+        f"https://api.openweathermap.org/data/2.5/weather"
+        f"?q={CITY}&appid={API_KEY}&units=metric"
+    )
 
 response = requests.get(url)
 data = response.json()
