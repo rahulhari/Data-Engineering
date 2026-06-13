@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 import requests
-import os
 
-API_KEY = os.getenv("OPENWEATHER_API_KEY")
-if not API_KEY:
-    raise EnvironmentError(
-        "Please set the OPENWEATHER_API_KEY environment variable with your OpenWeatherMap API key."
-    )
+API_KEY = "enter your api"
 
 CITIES = [
     "Bengaluru",
